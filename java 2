@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        char n=sc.next().charAt(0);
+        if(n>='0'&&n<='9'){
+            System.out.print("Digit");
+        }else if(n>='a'&&n<='z'||n>='A'&&n<='Z'){
+            System.out.println("Alphabet");
+        }else if(n=='$'){
+            System.out.println("Special Character");
+        }
+    }
+}
